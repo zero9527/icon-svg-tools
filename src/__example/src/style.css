@@ -1,0 +1,32 @@
+.icon-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  height: 80px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+}
+.icon-wrapper:hover {
+  background-color: #eee;
+}
+
+.zr-icon {
+  display: inline-block;
+  font-size: 22px;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -.125em;
+  text-rendering: optimizeLegibility;
+}
+.zr-icon svg {
+  display: inline-block;
+}
