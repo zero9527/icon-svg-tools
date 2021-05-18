@@ -52,12 +52,16 @@ async function startup () {
     console.log(`输出路径[${saveToDir}]不存在！`);
     process.exit(1);
   }
+  
   progress.start('开始生成svg图标\n');
+
   // 读取svg文件目录
   const files = await readSvgFile(svgDirPath);
   progress.text = '读取文件成功\n';
+
   const svgInfoList = await resolveSvgFile(svgDirPath, files);
   progress.text = 'svg信息处理成功\n';
+
   await createComponent(saveToDir, svgInfoList);
   progress.succeed('生成svg图标完成！\n');
 
